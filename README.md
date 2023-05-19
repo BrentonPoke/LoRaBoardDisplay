@@ -7,3 +7,8 @@ This is a beginning exercise for displaying text on an ESP32 development board. 
 
 ## Pre-requisites
 To get started, you will need the C++ compiler, cmake and [platformio](platformio.org) installed. There are a few ways to do this, but the [Platformio IDE](https://platformio.org/platformio-ide) is the easiest. It is simply a distribution of VSCode with Platformio's CLI tools integrated within. There are also many other IDEs supported by Platformio, which can be viewed [here](https://platformio.org/install/integration). This service is a dependency manager that makes it easy to work with embeded software projects.
+
+## Compatible Boards
+The CDP currently supports the following boards:
+* LILYGO® LoRa V1.3 ESP32 SX1276
+* [LILYGO® LoRa V2.1_1.6 ESP32 SX1276](https://github.com/LilyGO/TTGO-LoRa32-V2.1)
