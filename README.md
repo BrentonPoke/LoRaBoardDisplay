@@ -10,5 +10,7 @@ To get started, you will need the C++ compiler, cmake and [platformio](platformi
 
 ## Compatible Boards
 The CDP currently supports the following boards:
-* LILYGO® LoRa V1.3 ESP32 SX1276
-* [LILYGO® LoRa V2.1_1.6 ESP32 SX1276](https://github.com/LilyGO/TTGO-LoRa32-V2.1)
+* [LILYGO® ESP32 LoRa V1.3 SX1276](http://www.lilygo.cn/prod_view.aspx?TypeId=50003&Id=1253)
+* [LILYGO® ESP32 LoRa V2.1_1.6 SX1276](https://github.com/LilyGO/TTGO-LoRa32-V2.1)
+* [Heltec ESP32 LoRa V3 (SX1262)](https://www.amazon.com/MakerFocus-Development-Bluetooth-0-96inch-Display/dp/B076MSLFC9)
+* [Heltec ESP32 LoRa V2 (SX1276)](https://heltec.org/project/wifi-lora-32)
