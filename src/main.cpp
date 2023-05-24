@@ -16,12 +16,12 @@
 
 // create a built-in duck link
 DuckLink duck;
-
+DuckDisplay* display = NULL;
 // create a timer with default settings
 auto timer = timer_create_default();
 
 // for sending the counter message
-const int INTERVAL_MS = 30000;
+const int INTERVAL_MS = 3000;
 int counter = 1;
 
 //this is conventionally named runSensor(void *), but can be any name so long as it returns bool
@@ -34,15 +34,19 @@ void setup() {
   // given during the device provisioning then converted to a byte vector to
   // setup the duck NOTE: The Device ID must be exactly 8 bytes otherwise it
   // will get rejected
+  display = DuckDisplay::getInstance();
+  duck.setupSerial(115200);
   std::string deviceId("DUCK0001");
   std::vector<byte> devId;
   devId.insert(devId.end(), deviceId.begin(), deviceId.end());
+  display->setupDisplay(duck.getType(), devId);
   duck.setupWithDefaults(devId);
 
   // Initialize the timer. The timer thread runs separately from the main loop
   // and will trigger sending a counter message.
   timer.every(INTERVAL_MS, runSensor);
   Serial.println("[LINK] Setup OK!");
+  display->showDefaultScreen();
   
 }
 
@@ -53,18 +57,16 @@ void loop() {
   duck.run();
 }
 
+//This is the function that is called by the timer class. We will use it to do the printing on an interval.
 bool runSensor(void *) {
   bool result = false;
-  const byte* buffer;
-  
-
-  // There different way of sending data. Here we simply pass in the String object
-  int err = duck.sendData(topics::status, message);
-  if (err == DUCK_ERR_NONE) {
-     result = true;
-     counter++;
-  } else {
-    Serial.println("[LINK] Failed to send data. error = " + String(err));
-  }
+    //display a message on the OLED...
+    display->clear();
+    display->setCursor(0, 0);
+    display->drawString(0,10,"New Message");
+    display->drawString(0,20,"TEST");
+    display->drawString(0,30,"test");
+    display->sendBuffer();
+    result = true;
   return result;
 }
