@@ -16,4 +16,4 @@ The CDP currently supports the following boards:
 * [Heltec ESP32 LoRa V2 (SX1276)](https://heltec.org/project/wifi-lora-32)
 
 ## Assignment
-The assignment is to print your name, UMID and course number on the screen. The instruction for the assignment can be found in the [assignment.md](assignment.md) file.
+The assignment is to print your name, UMID and course number on the screen. The instruction for the assignment can be found in the [Assignment.md](assignment.md) file.
