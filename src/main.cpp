@@ -30,10 +30,6 @@ bool runSensor(void *);
 
 //The setup function is run only once on boot.
 void setup() {
-  // We are using a hardcoded device id here, but it should be retrieved or
-  // given during the device provisioning then converted to a byte vector to
-  // setup the duck NOTE: The Device ID must be exactly 8 bytes otherwise it
-  // will get rejected
   display = DuckDisplay::getInstance();
   duck.setupSerial(115200);
   std::string deviceId("DUCK0001");
@@ -45,7 +41,7 @@ void setup() {
   // Initialize the timer. The timer thread runs separately from the main loop
   // and will trigger sending a counter message.
   timer.every(INTERVAL_MS, runSensor);
-  Serial.println("[LINK] Setup OK!");
+  Serial.println("Setup OK!");
   display->showDefaultScreen();
   
 }
@@ -61,12 +57,7 @@ void loop() {
 bool runSensor(void *) {
   bool result = false;
     //display a message on the OLED...
-    display->clear();
-    display->setCursor(0, 0);
-    display->drawString(0,10,"New Message");
-    display->drawString(0,20,"TEST");
-    display->drawString(0,30,"test");
-    display->sendBuffer();
+
     result = true;
   return result;
 }
