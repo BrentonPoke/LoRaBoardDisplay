@@ -14,3 +14,6 @@ The CDP currently supports the following boards:
 * [LILYGO® ESP32 LoRa V2.1_1.6 SX1276](https://github.com/LilyGO/TTGO-LoRa32-V2.1)
 * [Heltec ESP32 LoRa V3 (SX1262)](https://www.amazon.com/MakerFocus-Development-Bluetooth-0-96inch-Display/dp/B076MSLFC9)
 * [Heltec ESP32 LoRa V2 (SX1276)](https://heltec.org/project/wifi-lora-32)
+
+## Assignment
+The assignment is to print your name, UMID and course number on the screen. The instruction for the assignment can be found in the [assignment.md](assignment.md) file.
