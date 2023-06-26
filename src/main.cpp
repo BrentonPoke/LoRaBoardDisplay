@@ -40,7 +40,6 @@ void setup() {
   duck.setupWithDefaults(devId);
 
   // Initialize the timer. The timer thread runs separately from the main loop
-  // and will trigger sending a counter message.
   timer.every(INTERVAL_MS, runSensor);
   Serial.println("Setup OK!");
   display->showDefaultScreen();
