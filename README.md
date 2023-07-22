@@ -6,7 +6,10 @@ An exercise for using either the TTGO or Heltec LoRa board OLED displays.
 This is a beginning exercise for displaying text on an ESP32 development board. The level of proficiency required is in alignment with CSC121 at University of Michigan - Flint, which is Programming I in C++. While this exercise can be done inside of a first C++ programming course, one will need to be familiar with command line tools and a CLI environment, especiallly if using Linux.
 
 ## Pre-requisites
-To get started, you will need the C++ compiler, cmake and [platformio](https://platformio.org) installed. There are a few ways to do this, but the [Platformio IDE](https://platformio.org/platformio-ide) is the easiest. It is simply a distribution of VSCode with Platformio's CLI tools integrated within. There are also many other IDEs supported by Platformio, which can be viewed [here](https://platformio.org/install/integration). This service is a dependency manager that makes it easy to work with embeded software projects.
+To get started, you will need the C++ compiler, cmake, python and [platformio](https://platformio.org) installed. There are a few ways to do this, but the [Platformio IDE](https://platformio.org/platformio-ide) is the easiest. It is simply a distribution of VSCode with Platformio's CLI tools integrated within. There are also many other IDEs supported by Platformio, which can be viewed [here](https://platformio.org/install/integration). This service is a dependency manager that makes it easy to work with embeded software projects.
+## Setup
+If you are having trouble deciding which avenue to take, first install python and then install PlatformIO through the installer script according to this documentation: https://docs.platformio.org/en/latest/core/installation/methods/installer-script.html
+Afterward, the [Assignment.md](Assignment.md) file will show you how to use this CLI tool to flash your code to a board.
 
 ## Compatible Boards
 The CDP currently supports the following boards:
