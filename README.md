@@ -12,7 +12,7 @@ If you are having trouble deciding which avenue to take, first install python an
 Afterward, the [Assignment.md](Assignment.md) file will show you how to use this CLI tool to flash your code to a board.
 
 ## If you happen to use CLion like the author...
-[Then I have instructions to make everything pretty easy for you.](ClionSetup.md)
+[Then I have instructions to make everything pretty easy for you.](CLionSetup.md)
 
 ## Compatible Boards
 The CDP currently supports the following boards:
