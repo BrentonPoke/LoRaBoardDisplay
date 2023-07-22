@@ -13,7 +13,22 @@ Example for Linux:
 pio run -t upload -e ttgo-lora32-v21 --upload-port /dev/ttyUSB0
 ```
 When the process finishes, you should see the logo of Project OWL on the screen. 
+
+To read what's comming across on the serial monitor (useful for debugging purposes) check to see if the board is available by typing
+```
+pio device list
+```
+You should get a printout that looks like this
+
+![Screenshot 2023-07-21 233039](https://github.com/BrentonPoke/LoRaBoardDisplay/assets/6861851/88d57735-cd35-4cb0-a75e-d56062d667f4)
+
+To monitor the port, you would type
+```
+pio device monitor -p <PORT> -b 115200
+```
+where `<PORT>` would be replaced with `COM8`. On linux, the same port naming conventions are used and the port will usually be named something similar to `/dev/ttyUSB0`.
 ## The API
+
 The API is a set of functions that are used to interact with the OLED screen. It is defined in a class named `DuckDisplay`.
 The API is defined in the file `DuckDisplay.h` and implemented in `DuckDisplay.cpp`. You are encouraged to look at the implementation to see how it works, but you should not need to modify it.
 Below are the functions currently defined in the API:
