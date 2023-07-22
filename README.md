@@ -11,6 +11,9 @@ To get started, you will need the C++ compiler, cmake, python and [platformio](h
 If you are having trouble deciding which avenue to take, first install python and then install PlatformIO through the installer script according to this documentation: https://docs.platformio.org/en/latest/core/installation/methods/installer-script.html
 Afterward, the [Assignment.md](Assignment.md) file will show you how to use this CLI tool to flash your code to a board.
 
+## If you happen to use CLion like the author...
+[Then I have instructions to make everything pretty easy for you.](ClionSetup.md)
+
 ## Compatible Boards
 The CDP currently supports the following boards:
 * [LILYGO® ESP32 LoRa V1.3 SX1276](http://www.lilygo.cn/prod_view.aspx?TypeId=50003&Id=1253)
