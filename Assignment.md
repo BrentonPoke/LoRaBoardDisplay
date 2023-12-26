@@ -54,7 +54,7 @@ In the `setup()` function, the display is initialized with the following line:
 ```cpp
 display = DuckDisplay::getInstance();
 ```
-Notice that you are manipulating the display through a pointer to an object. This is done to minimize memory usage From here, the API can be used by calling the functions on the `display` pointer.
+Notice that you are manipulating the display through a pointer to an object. This is done to minimize memory usage. From here, the API can be used by calling the functions on the `display` pointer.
 ## Deliverable
 The deliverable will be printing your name, UMID and course number on the screen under the following conditions:
 * Your name will be printed in the top left corner of the screen
